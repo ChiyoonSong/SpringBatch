@@ -10,3 +10,6 @@ spring:
       minimum-idle: 10
       maximum-pool-size: 50
       transaction-isolation: TRANSACTION_READ_UNCOMMITTED
+  batch:
+    job:
+      names: ${job.name:NONE} # 특정 Job 실행,

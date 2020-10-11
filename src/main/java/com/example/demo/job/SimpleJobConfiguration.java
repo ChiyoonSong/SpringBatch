@@ -27,6 +27,7 @@ public class SimpleJobConfiguration {
          */
         return jobBuilderFactory.get("simpleJob")
                 .start(simpleStep1(null))
+                /** .next : 순차적 Step의 순서 제어*/
                 .next(simpleStep2(null))
                 .build();
     }
